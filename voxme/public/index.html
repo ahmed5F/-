@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>VoxMe - منصة التواصل الاجتماعي</title>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="manifest" href="manifest.json">
+</head>
+<body>
+    <div class="app-container">
+        <!-- شريط التنقل العلوي -->
+        <nav class="navbar">
+            <div class="logo">VoxMe</div>
+            <div class="search-bar">
+                <input type="text" placeholder="ابحث عن أصدقاء أو منشورات...">
+                <button><i class="fas fa-search"></i></button>
+            </div>
+            <div class="nav-icons">
+                <button id="theme-toggle"><i class="fas fa-moon"></i></button>
+                <button id="notifications"><i class="fas fa-bell"></i></button>
+                <button id="user-menu"><i class="fas fa-user"></i></button>
+            </div>
+        </nav>
+
+        <!-- المحتوى الرئيسي -->
+        <div class="main-content">
+            <!-- الشريط الجانبي -->
+            <aside class="sidebar">
+                <ul class="menu">
+                    <li class="active"><a href="#"><i class="fas fa-home"></i> الرئيسية</a></li>
+                    <li><a href="#"><i class="fas fa-user-friends"></i> الأصدقاء</a></li>
+                    <li><a href="#"><i class="fas fa-comment-dots"></i> الدردشة</a></li>
+                    <li><a href="#"><i class="fas fa-video"></i> الفيديوهات</a></li>
+                    <li><a href="#"><i class="fas fa-images"></i> الصور</a></li>
+                    <li><a href="#"><i class="fas fa-microphone"></i> البصمة الصوتية</a></li>
+                    <li><a href="#"><i class="fas fa-cog"></i> الإعدادات</a></li>
+                </ul>
+            </aside>
+
+            <!-- منطقة المنشورات -->
+            <section class="posts-section">
+                <div class="create-post">
+                    <div class="post-input">
+                        <img src="https://via.placeholder.com/50" alt="صورة المستخدم" class="user-avatar">
+                        <input type="text" placeholder="ما الذي يدور في ذهنك؟">
+                    </div>
+                    <div class="post-options">
+                        <button><i class="fas fa-image"></i> صورة</button>
+                        <button><i class="fas fa-video"></i> فيديو</button>
+                        <button><i class="fas fa-microphone"></i> صوت</button>
+                        <button><i class="fas fa-paper-plane"></i> نشر</button>
+                    </div>
+                </div>
+
+                <div class="posts">
+                    <!-- منشور مثال -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="https://via.placeholder.com/40" alt="صورة المستخدم" class="user-avatar">
+                            <div class="user-info">
+                                <h4>أحمد محمد</h4>
+                                <span class="post-time">منذ ساعتين</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>هذا مثال لمنشور في تطبيق VoxMe. يمكنك مشاركة أفكارك، الصور، الفيديوهات والتسجيلات الصوتية مع أصدقائك!</p>
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="fas fa-thumbs-up"></i> أعجبني</button>
+                            <button><i class="fas fa-comment"></i> تعليق</button>
+                            <button><i class="fas fa-share"></i> مشاركة</button>
+                        </div>
+                    </div>
+
+                    <!-- منشور مع صورة -->
+                    <div class="post">
+                        <div class="post-header">
+                            <img src="https://via.placeholder.com/40" alt="صورة المستخدم" class="user-avatar">
+                            <div class="user-info">
+                                <h4>سارة علي</h4>
+                                <span class="post-time">منذ 5 ساعات</span>
+                            </div>
+                        </div>
+                        <div class="post-content">
+                            <p>شاهدوا هذه الصورة الرائعة من رحلتي الأخيرة!</p>
+                            <img src="https://via.placeholder.com/500x300" alt="صورة المنشور" class="post-image">
+                        </div>
+                        <div class="post-actions">
+                            <button><i class="fas fa-thumbs-up"></i> أعجبني</button>
+                            <button><i class="fas fa-comment"></i> تعليق</button>
+                            <button><i class="fas fa-share"></i> مشاركة</button>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <!-- الشريط الجانبي الأيمن -->
+            <aside class="right-sidebar">
+                <div class="user-profile">
+                    <img src="https://via.placeholder.com/80" alt="صورة المستخدم" class="profile-avatar">
+                    <h3>اسم المستخدم</h3>
+                    <p>وصف مختصر عن المستخدم...</p>
+                </div>
+
+                <div class="suggested-friends">
+                    <h4>أصدقاء مقترحون</h4>
+                    <div class="friend">
+                        <img src="https://via.placeholder.com/40" alt="صورة الصديق">
+                        <span>محمد خالد</span>
+                        <button>إضافة</button>
+                    </div>
+                    <div class="friend">
+                        <img src="https://via.placeholder.com/40" alt="صورة الصديق">
+                        <span>نورا أحمد</span>
+                        <button>إضافة</button>
+                    </div>
+                    <div class="friend">
+                        <img src="https://via.placeholder.com/40" alt="صورة الصديق">
+                        <span>علي حسن</span>
+                        <button>إضافة</button>
+                    </div>
+                </div>
+            </aside>
+        </div>
+
+        <!-- شريط التنقل السفلي (للجوال) -->
+        <nav class="mobile-nav">
+            <a href="#" class="active"><i class="fas fa-home"></i></a>
+            <a href="#"><i class="fas fa-search"></i></a>
+            <a href="#"><i class="fas fa-comment-dots"></i></a>
+            <a href="#"><i class="fas fa-video"></i></a>
+            <a href="#"><i class="fas fa-user"></i></a>
+        </nav>
+    </div>
+
+    <!-- نافذة الدردشة -->
+    <div class="chat-window hidden">
+        <div class="chat-header">
+            <h3>الدردشة</h3>
+            <button class="close-chat"><i class="fas fa-times"></i></button>
+        </div>
+        <div class="chat-messages">
+            <!-- الرسائل ستضاف هنا بالجافاسكريبت -->
+        </div>
+        <div class="chat-input">
+            <input type="text" placeholder="اكتب رسالة...">
+            <button><i class="fas fa-paper-plane"></i></button>
+            <button id="record-audio"><i class="fas fa-microphone"></i></button>
+        </div>
+    </div>
+
+    <script src="script.js"></script>
+</body>
+</html>
